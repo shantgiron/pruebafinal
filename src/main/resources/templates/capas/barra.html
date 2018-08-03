@@ -1,0 +1,52 @@
+<!-- Fixed Sidebar Left -->
+
+<div th:fragment="barra" class="fixed-sidebar">
+    <div class="fixed-sidebar-left sidebar--small" id="sidebar-left">
+        <a href="#" th:href="|/perfil?usuario=${usuario.id}|" class="logo">
+            <div class="img-wrap">
+                <img src="img/logo.png" alt="SyS">
+            </div>
+        </a>
+
+        <div class="mCustomScrollbar" data-mcs-theme="dark">
+            <ul class="left-menu">
+                <!--<li>-->
+                    <!--<a href="#" class="js-sidebar-open">-->
+                        <!--<svg class="olymp-menu-icon left-menu-icon"  data-toggle="tooltip" data-placement="right"   data-original-title="EXPANDIR"><use xlink:href="svg-icons/sprites/icons.svg#olymp-menu-icon"></use></svg>-->
+                    <!--</a>-->
+                <!--</li>-->
+                <li>
+                    <a href="/inicio">
+                        <svg class="olymp-newsfeed-icon left-menu-icon" data-toggle="tooltip" data-placement="right"   data-original-title="TIMELINE"><use xlink:href="svg-icons/sprites/icons.svg#olymp-newsfeed-icon"></use></svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" th:href="|/perfil?usuario=${usuario.id}|">
+                        <svg class="olymp-happy-face-icon left-menu-icon"  data-toggle="tooltip" data-placement="right"   data-original-title="MI PERFIL"><use xlink:href="svg-icons/sprites/icons.svg#olymp-happy-face-icon"></use></svg>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="/cuenta.html">
+                        <svg class="olymp-happy-faces-icon left-menu-icon"  data-toggle="tooltip" data-placement="right"   data-original-title="Cuenta"><use xlink:href="svg-icons/sprites/icons.svg#olymp-happy-faces-icon"></use></svg>
+                    </a>
+                </li>
+
+                <li>
+                    <!--<a href="25-FriendsBirthday.html">-->
+                    <a href="#" th:href="|/perfil?usuario=${usuario.id}|">
+                        <svg class="olymp-cupcake-icon left-menu-icon"  data-toggle="tooltip" data-placement="right"   data-original-title="Friends Birthdays"><use xlink:href="svg-icons/sprites/icons.svg#olymp-cupcake-icon"></use></svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="/cerrarsesion">
+                        <svg class="olymp-logout-icon left-menu-icon"  data-toggle="tooltip" data-placement="right"   data-original-title="Salir">
+                            <use xlink:href="svg-icons/sprites/icons.svg#olymp-logout-icon"></use></svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- ... end Fixed Sidebar Left -->
